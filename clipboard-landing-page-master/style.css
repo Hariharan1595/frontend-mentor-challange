@@ -1,0 +1,212 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Header styles */
+header {
+  width: 100%;
+  background: url("images/bg-header-desktop.png");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.logo img {
+  margin: 1rem auto;
+  max-width: 100%;
+}
+
+.detials {
+  padding: 1rem 0;
+}
+
+.detials h2 {
+  padding: 1rem;
+}
+
+.download-btn button {
+  width: 15rem;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  text-align: center;
+  color: white;
+  font: inherit;
+  border: 0;
+}
+
+.mac button {
+  background-color: hsl(201, 11%, 66%);
+}
+
+/* Content section styles */
+.content {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.content h2 {
+  padding: 1rem;
+}
+
+.content p {
+  line-height: 1.4rem;
+}
+
+/* Computer section styles */
+.computer {
+  display: flex;
+  flex-direction: row;
+  column-gap: 7rem; /* Adjust layout for smaller screens */
+  margin-top: 3rem;
+}
+
+.computer .content-img img {
+  max-width: 100%; /* Ensure images scale down appropriately */
+}
+
+.info p {
+  line-height: 1.5rem;
+  padding: 0.5rem 0;
+  margin-bottom: 2rem;
+}
+
+/* Work section styles */
+.work {
+  text-align: center;
+  margin-top: 5rem; /* Adjust spacing */
+}
+
+.work h2 {
+  padding: 1rem;
+}
+
+.work p {
+  margin-bottom: 2rem; /* Adjust spacing */
+  line-height: 1.5rem;
+}
+
+/* Workflow section styles */
+.work-flow {
+  text-align: center;
+}
+
+.work-info {
+  margin: 3rem auto;
+  display: flex;
+  flex-wrap: wrap; /* Ensure boxes wrap on smaller screens */
+  justify-content: center;
+  gap: 2rem; /* Adjust spacing between boxes */
+}
+
+.box {
+  text-align: center;
+  padding: 1rem;
+}
+
+.box h3 {
+  margin: 1rem 0;
+}
+
+/* Company section styles */
+.company {
+  text-align: center;
+  margin: 5rem auto;
+}
+
+.company img {
+  margin: 0 1rem; /* Adjust spacing */
+  max-width: 100%; /* Ensure images scale down appropriately */
+}
+
+/* Clipboard section styles */
+.clip {
+  text-align: center;
+  margin-bottom: 3rem; /* Adjust spacing */
+}
+
+.clip p {
+  padding: 1rem 0;
+}
+
+.clip button {
+  width: 15rem;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  text-align: center;
+  color: white;
+  font: inherit;
+  border: 0;
+}
+h2 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 400;
+}
+p {
+  color: hsl(201, 11%, 66%);
+}
+
+/* Footer styles */
+footer {
+  display: flex;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+  justify-content: space-around;
+  margin-top: 3rem;
+  border-top: 1px;
+  padding: 1rem;
+}
+
+.footer-img img {
+  width: 4.5rem;
+}
+
+.social img {
+  margin: 1rem;
+  max-width: 100%; /* Ensure social icons scale down appropriately */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+  body {
+    margin: 0 auto;
+  }
+  .download-btn button,
+  .clip button {
+    width: 60%;
+  }
+
+  .computer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content-img {
+    width: 10rem;
+  }
+  .work img {
+    width: 10rem;
+  }
+  .company img {
+    width: 4rem;
+    margin: 0.1rem;
+  }
+  footer {
+    width: 100%;
+    font-size: 0.5rem;
+  }
+
+  .footer-img img,
+  .social img {
+    width: 1rem;
+    margin: 0.5rem;
+  }
+}
