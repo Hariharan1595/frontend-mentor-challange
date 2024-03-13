@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(216, 12%, 8%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Overpass", sans-serif;
+}
+.container-rate {
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(0, 0%, 100%);
+  padding: 1rem;
+  border-radius: 20px;
+  width: 25rem;
+  height: 25rem;
+}
+.container-rate img {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  width: 2rem;
+  height: 2rem;
+  padding: 1rex;
+}
+.container-rate h1 {
+  margin: 1rem 0;
+  font-weight: 700;
+}
+.rate {
+  display: flex;
+  justify-content: space-between;
+}
+.rate p {
+  margin: 2rem 0;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  padding: 2rex;
+  background-color: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  font-weight: 400;
+}
+.container-rate p {
+  line-height: 1.5rem;
+  color: hsl(217, 12%, 63%);
+  font-weight: 400;
+}
+.rate p:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  margin-top: 1rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.submit-btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+.thank-you {
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  border-radius: 20px;
+  width: 25rem;
+  height: 27rem;
+  text-align: center;
+}
+.thank-you h2 {
+  font-weight: 700;
+}
+.rate-info {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: hsl(25, 97%, 53%);
+  margin: 2rem 0;
+  padding: 0.5rem 0;
+  border-radius: 20px;
+}
+.thank-you p {
+  line-height: 1.5rem;
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+}
+.hidden {
+  display: none;
+}
+.color {
+  color: hsl(25, 97%, 53%);
+}
+
+.value.color {
+  background-color: orange;
+  color: hsl(0, 0%, 100%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution p {
+  color: hsl(25, 97%, 53%);
+  margin-top: 2rem;
+}
+.attribution a {
+  color: hsl(0, 0%, 100%);
+}
+@media (max-width: 760px) {
+  boody {
+    margin: auto;
+  }
+  .container-rate {
+    width: 20rem;
+    height: 27rem;
+  }
+  .thank-you {
+    width: 20rem;
+    height: 27rem;
+  }
+}
