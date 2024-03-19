@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  background-color: hsl(234, 29%, 20%);
+  font-family: "Roboto", sans-serif;
+}
+p {
+  color: hsl(234, 29%, 20%);
+}
+main {
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  border-radius: 30px;
+}
+.contant {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50dvh;
+  width: 30rem;
+  padding: 2rem;
+  margin: 5rem 0 0 0;
+}
+.contant h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: hsl(235, 18%, 26%);
+}
+.contant p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  margin: 1.5rem 0;
+}
+
+.check-list p {
+  font-size: 1rem;
+  line-height: 2.5rem;
+  margin: 0.2rem 0;
+}
+.list {
+  display: flex;
+}
+.list p {
+  line-height: 1.5rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mail {
+  margin: 1rem 0;
+  position: relative;
+}
+.mail input {
+  width: 90%;
+  padding: 1rem;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid hsl(231, 7%, 60%);
+  color: hsl(234, 29%, 20%);
+  font-weight: 400;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+button {
+  width: 90%;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  padding: 1.2rem 0;
+}
+button:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+.error {
+  position: absolute;
+  right: 50px;
+
+  color: rgb(230, 58, 58);
+}
+.mobile {
+  display: none;
+}
+label {
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+.thank-you-card {
+  width: 20rem;
+  height: 22rem;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  border-radius: 20px;
+}
+.thank-you-card h1 {
+  margin: 1rem 0;
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+.thank-you-card p {
+  margin: 1rem 0;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  color: hsl(235, 18%, 26%);
+}
+strong {
+  color: hsl(234, 29%, 20%);
+}
+.thank-you-card button {
+  margin-top: 1rem;
+  padding: 0.7rem 1rem;
+  width: 100%;
+}
+.hidden {
+  display: none;
+}
+.attribution {
+  position: fixed;
+  top: 95%;
+  text-align: center;
+  font-size: 0.7rem;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(4, 100%, 67%);
+}
+
+@media (max-width: 720px) {
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(0, 0%, 100%);
+  }
+  main {
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 0;
+    border-radius: 0%;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    width: 100%;
+  }
+  .contant {
+    width: 100%;
+    height: 100%;
+    margin: 1rem 0;
+  }
+  .contant h1 {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .check-list p {
+    font-size: 0.9rem;
+  }
+  .error {
+    font-size: 1rcap;
+  }
+  .thank-you-card {
+    width: 100%;
+    margin-top: 10rem;
+  }
+  .thank-you-card button {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 90%;
+  }
+  .thank-you-card p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
