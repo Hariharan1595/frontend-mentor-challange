@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("images/bg-top.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(240, 78%, 98%);
+  height: 100vh;
+  width: 100%;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-image: url("images/bg-bottom.svg");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  width: 20rem;
+  background-color: hsl(240, 78%, 98%);
+  height: 25rem;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 5rem;
+  border-radius: 10px;
+  color: hsl(233, 13%, 49%);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.08);
+}
+.Professional {
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  height: 30rem;
+  margin-top: 2rem;
+  color: hsl(240, 78%, 98%);
+}
+.contant {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.pack-data p {
+  margin: 1rem 0;
+  font-weight: 500;
+}
+.btn {
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 5px;
+  color: hsl(240, 78%, 98%);
+  font-family: inherit;
+  font-weight: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn:hover {
+  background: hsl(240, 78%, 98%);
+  border: 1px solid rgb(58, 57, 57);
+  color: hsl(234, 36%, 47%);
+}
+.btncenter {
+  background: hsl(240, 78%, 98%);
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 5px;
+  color: hsl(234, 36%, 47%);
+  font-family: inherit;
+  font-weight: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btncenter:hover {
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: hsl(240, 78%, 98%);
+  border: 1px solid hsl(240, 78%, 98%);
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.price p {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+.price span {
+  font-size: 1.8rem;
+  position: absolute;
+  left: 14%;
+  bottom: 15%;
+  font-weight: 700;
+  text-align: center;
+}
+h1 {
+  color: hsl(232, 13%, 33%);
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-top: 5rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
+
+  margin-top: 5rem;
+}
+.attribution a {
+  text-decoration: none;
+  color: rgb(180, 59, 16);
+}
+header {
+  display: flex;
+  margin: 3rem 0 0 0;
+  text-align: center;
+}
+input[type="checkbox"].toggle {
+  position: absolute;
+  left: -9000px;
+}
+input[type="checkbox"].toggle + label {
+  position: relative;
+  display: flex;
+  text-align: center;
+  margin: 0 2rem;
+}
+input[type="checkbox"].toggle + label::before {
+  content: "";
+  width: 4em;
+  height: 2em;
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 1em;
+}
+input[type="checkbox"].toggle + label::after {
+  content: "";
+  width: 1.5em;
+  height: 1.5em;
+  background-color: hsl(240, 78%, 98%);
+  border-radius: 50%;
+  position: absolute;
+  left: 0.3em;
+  top: 0.2em;
+}
+input[type="checkbox"].toggle:checked + label::after {
+  background-color: hsl(240, 78%, 98%);
+  left: 2.2em;
+}
+header span {
+  margin-top: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: hsl(237, 53%, 79%);
+}
+@media (max-width: 760px) {
+  main {
+    flex-direction: column;
+    height: 100%;
+  }
+  body {
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    margin: 5rem auto;
+    background-position: top right;
+    background-size: 50%;
+  }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>pricing component with toggle maste</title>
+  </head>
+  <body>
+    <h1>Our Pricing</h1>
+    <header>
+      <span>Annually</span>
+      <input type="checkbox" class="toggle plans" id="Monthly" />
+      <label for="Monthly" class="plans"> </label>
+      <span>Monthly</span>
+    </header>
+    <div class="container">
+      <main>
+        <section class="Basic box contant">
+          <div>
+            <h3>Basic</h3>
+          </div>
+          <div class="price">
+            <span>$</span>
+            <p class="basic-plan">199.99</p>
+          </div>
+          <div class="pack-data">
+            <hr />
+
+            <p>500 GB Storage</p>
+            <hr />
+            <p>2 Users Allowed</p>
+            <hr />
+            <p>Send up to 3 GB</p>
+            <hr />
+          </div>
+          <button class="btn">Learn More</button>
+        </section>
+        <section class="Professional box contant">
+          <div>
+            <h3>Professional</h3>
+          </div>
+          <div class="price">
+            <span>$</span>
+            <p class="pro-plan">249.99</p>
+          </div>
+          <div class="pack-data">
+            <hr />
+            <p>1 TB Storage</p>
+            <hr />
+            <p>2 Users Allowed</p>
+            <hr />
+            <p>Send up to 10 GB</p>
+            <hr />
+          </div>
+          <button class="btncenter">Learn More</button>
+        </section>
+        <section class="Master box contant">
+          <div>
+            <h3>Master</h3>
+          </div>
+          <div class="price">
+            <span>$</span>
+            <p class="master-plan">399.99</p>
+          </div>
+          <div class="pack-data">
+            <hr />
+            <p>2 TB Storage</p>
+            <hr />
+            <p>2 Users Allowed</p>
+            <hr />
+            <p>Send up to 20 GB</p>
+            <hr />
+          </div>
+          <button class="btn">Learn More</button>
+        </section>
+      </main>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">hariHaran</a>.
+      </div>
+    </div>
+  </body>
+</html>
