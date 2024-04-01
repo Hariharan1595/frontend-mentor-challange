@@ -1,0 +1,597 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::after,
+::before {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+/* header-starting-point */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem auto;
+  align-items: center;
+  max-width: 80%;
+}
+
+.nav-list a {
+  margin-right: 3rem;
+  color: hsl(229, 31%, 21%);
+  font-weight: 400;
+}
+.nav-list button {
+  padding: 0.5rem 1rem;
+  background-color: hsl(0, 94%, 66%);
+  border: 2px solid hsl(0, 94%, 66%);
+  border-radius: 5px;
+  color: rgb(250, 245, 245);
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  width: 5.5rem;
+  height: 2.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+.nav-list button:hover {
+  background-color: rgb(250, 245, 245);
+  color: hsl(0, 94%, 66%);
+}
+.nav-list a:hover,
+.overlay nav a:hover,
+footer nav a:hover,
+.footer-icon img:hover {
+  color: hsl(0, 94%, 66%);
+}
+.hamburger-menu {
+  justify-content: space-around;
+  flex-direction: column;
+  width: 2.1rem;
+  height: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+.hamburger-menu span {
+  display: block;
+  width: 100%;
+  height: 0.2rem;
+  background-color: black;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  transform-origin: 6px 2px;
+}
+
+.open {
+  span:nth-child(1) {
+    transform: rotate(45deg);
+    background-color: rgb(250, 245, 245);
+  }
+  span:nth-child(2) {
+    opacity: 0;
+  }
+  span:nth-child(3) {
+    transform: rotate(-45deg);
+    background-color: rgb(250, 245, 245);
+  }
+}
+.overlay {
+  position: fixed;
+  background-color: hsl(229, 31%, 21%);
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0%;
+  animation: down 0.5s;
+}
+@keyframes down {
+  0% {
+    top: -100%;
+  }
+
+  100% {
+    top: 0%;
+  }
+}
+.overlay nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+  margin-top: 10rem;
+}
+.overlay nav a {
+  color: rgb(250, 245, 245);
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+hr {
+  width: 80%;
+  opacity: 0.2;
+}
+.overlay button {
+  width: 80%;
+  height: 15%;
+  background: transparent;
+  border: 2px solid rgb(250, 245, 245);
+  color: rgb(250, 245, 245);
+  padding: 0.5rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-family: 500;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 2rem;
+}
+.social-icon {
+  position: absolute;
+  bottom: 10%;
+  left: 40%;
+}
+.social-icon img {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+/* header-ending-point */
+.hidden {
+  display: none;
+}
+/* section-1-start */
+.hero-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 8rem auto 0 auto;
+}
+.banner-1 {
+  position: relative;
+}
+
+.banner-1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  -webkit-border-top-left-radius: 800px;
+  -webkit-border-bottom-left-radius: 800px;
+  -moz-border-radius-topleft: 800px;
+  -moz-border-radius-bottomleft: 800px;
+  border-top-left-radius: 800px;
+  border-bottom-left-radius: 800px;
+  bottom: 9%;
+  left: 29%;
+  height: 70%;
+  width: 99.9%;
+  background-color: #5368df;
+}
+.contant-1 {
+  margin-top: 4rem;
+}
+.contant-1 h1 {
+  font-size: 4rem;
+  color: hsl(229, 31%, 21%);
+}
+.contant-1 p {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  color: hsl(229, 8%, 60%);
+  line-height: 2.5rem;
+}
+.btn {
+  width: 10rem;
+  margin-right: 1rem;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn-1 {
+  background-color: hsl(231, 69%, 60%);
+  color: rgb(239, 241, 239);
+  border: none;
+}
+.btn-2 {
+  border: 1px solid;
+  background: transparent;
+}
+.btn-1:hover {
+  background-color: rgb(239, 241, 239);
+  color: hsl(231, 69%, 60%);
+  border: 2px solid hsl(231, 69%, 60%);
+}
+.btn-2:hover {
+  border: 2px solid hsl(229, 31%, 21%);
+}
+.features {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  margin-top: 5rem;
+}
+.features p {
+  margin-top: 1.6rem;
+  color: hsl(229, 8%, 60%);
+  line-height: 2rem;
+  font-size: 1.3rem;
+  width: 40%;
+}
+.select-menu ul {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+}
+.select-menu li {
+  margin-right: 2rem;
+  cursor: pointer;
+  color: hsl(229, 8%, 60%);
+  position: relative;
+}
+.select-menu li::after {
+  content: "";
+  height: 4px;
+  background: hsl(0, 94%, 66%);
+  position: absolute;
+  bottom: -10px;
+}
+.select-menu li:hover::after {
+  width: 100%;
+  left: 0;
+}
+.banner-2 {
+  position: relative;
+}
+.banner-2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  -webkit-border-top-right-radius: 900px;
+  -webkit-border-bottom-right-radius: 900px;
+  -moz-border-radius-topright: 900px;
+  -moz-border-radius-bottomright: 900px;
+  border-top-right-radius: 900px;
+  border-bottom-right-radius: 900px;
+  bottom: -9%;
+  left: -36%;
+  height: 80%;
+  width: 99.9%;
+  background-color: #5368df;
+}
+.contant-2 {
+  margin-left: 10rem;
+}
+.contant-2 h2 {
+  font-size: 2rem;
+}
+.contant-2 p {
+  font-size: 1.9rem;
+  line-height: 3rem;
+}
+.browser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem 0;
+}
+.Firefox {
+  margin: 7rem 10rem 0 10rem;
+}
+.Opera {
+  margin-top: 15rem;
+}
+.box {
+  padding: 1rem;
+  width: 15rem;
+  height: 16rem;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 10px 15px 12px rgba(0, 0, 0, 0.1);
+}
+.btn-3 {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background: hsl(231, 69%, 60%);
+  color: rgb(239, 241, 239);
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+.browser h4 {
+  margin: 1rem 0;
+}
+.browser p {
+  color: hsl(229, 8%, 60%);
+}
+.hero-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.accordion {
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  width: 50%;
+  padding: 1rem;
+}
+.accordion .accordion-header {
+  padding: 10px 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion .accordion-content {
+  padding: 10px 15px;
+  display: none;
+}
+.arrow {
+  position: absolute;
+  right: 1%;
+}
+.accordion p {
+  color: hsl(229, 8%, 60%);
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+.hero-3 button {
+  margin-top: 2rem;
+  text-align: center;
+}
+.hero-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: hsl(231, 69%, 60%);
+  padding: 2rem;
+  margin-top: 10rem;
+  color: rgb(239, 241, 239);
+}
+.hero-4 h4 {
+  margin: 2rem 0;
+  font-size: 2rem;
+  text-align: center;
+}
+.hero-4 p {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.hero-4 input {
+  padding: 0.7rem;
+  width: 20rem;
+  margin-right: 1rem;
+}
+.hero-4 button {
+  padding: 0.7rem 0.9rem;
+  cursor: pointer;
+  background-color: hsl(0, 94%, 66%);
+  color: rgb(239, 241, 239);
+  border: none;
+}
+.hero-4 button:hover {
+  background-color: rgb(239, 241, 239);
+  color: hsl(0, 94%, 66%);
+}
+.valid-email {
+  position: relative;
+}
+.error {
+  position: absolute;
+  padding: 0.1rem 0;
+  width: 73.5%;
+  bottom: -50%;
+  left: 0;
+  text-align: center;
+  background-color: hsl(0, 94%, 66%);
+}
+
+.error-icon {
+  position: absolute;
+  right: 30%;
+  top: 25%;
+}
+footer {
+  width: 100%;
+  background-color: hsl(229, 31%, 21%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer nav a {
+  color: rgb(239, 241, 239);
+  margin-right: 3rem;
+}
+.footer-logo img {
+  filter: invert(100%);
+  margin-right: 2rem;
+}
+.footer-icon img {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: flex;
+  }
+  .nav-list {
+    display: none;
+  }
+  main {
+    /* width: 90%; */
+    margin: 1rem auto;
+  }
+  .hero-1 {
+    flex-direction: column-reverse;
+    margin-top: 5rem;
+  }
+  .banner-1 img {
+    width: 120%;
+  }
+
+  .banner-1::after {
+    width: 83.5%;
+    height: 80%;
+    top: 20%;
+    right: 0;
+  }
+  .banner-1 {
+    z-index: -1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contant-1 {
+    text-align: center;
+    width: 100%;
+  }
+  .contant-1 h1,
+  .contant-2 h2 {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+  .contant-1 p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+  .btn {
+    width: 8rem;
+    padding: 1rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+  .features p {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+  .bookmark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bookmark img {
+    width: 120%;
+    margin-top: 2rem;
+  }
+  .contant-2 {
+    margin-left: 0;
+  }
+  .banner-2::after {
+    width: 83.5%;
+    height: 80%;
+    top: 30%;
+    right: 0%;
+  }
+  .banner-2 {
+    z-index: -1;
+    width: 100%;
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bookmark {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .hero-2 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .select-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 6rem;
+    text-align: center;
+  }
+  .Firefox {
+    margin: 0;
+  }
+  .Opera {
+    margin: 0;
+  }
+  .browser {
+    flex-direction: column;
+    height: 50rem;
+    justify-content: space-between;
+  }
+  .accordion {
+    width: 90%;
+  }
+  .hero-4 button {
+    width: 20rem;
+    margin-top: 3rem;
+  }
+  .error {
+    bottom: 51%;
+    width: 100%;
+  }
+  .error-icon {
+    right: 10%;
+    top: 10%;
+  }
+  .hero-4 input {
+    width: 100%;
+  }
+  .hero-4 button {
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .footer-logo {
+    flex-direction: column;
+  }
+  footer nav {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+  footer nav a {
+    margin: 1rem 0;
+    text-align: center;
+  }
+  .footer-icon img {
+    margin: 0 1rem;
+  }
+}
